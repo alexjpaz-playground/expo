@@ -34,4 +34,4 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
         
-      - run: yarn expo publish
+      - run: yarn expo --non-interactive publish
